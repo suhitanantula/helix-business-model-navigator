@@ -4,8 +4,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Companies Analyzed | 4 |
-| Sectors Covered | Banking, Mining |
+| Companies Analyzed | 6 |
+| Sectors Covered | Banking, Mining, Retail, Telecom |
 | Last Updated | 2025-12-04 |
 
 ---
@@ -16,28 +16,45 @@
 Q9 [    ]                                      ← Future: Full Orchestrators
 Q8 [RIO, FMG]                                  ← Mining Leaders
 Q7 [    ]                                      ← Traditional Proxy (bypassed)
-Q6 [    ]                                      ← Target for CBA, Westpac
-Q5 [CBA*, WBC, NAB, TLS, WOW]                  ← LARGEST CLUSTER (Banking/Retail)
-Q4 [ANZ, OPTUS, BNS]                           ← Building capability
+Q6 [    ]                                      ← Target: CBA (closest), NAB (12-18mo)
+Q5 [CBA*, NAB**, WBC, ANZ, TLS, WOW]           ← LARGEST CLUSTER (All Big 4 Banks)
+Q4 [OPTUS, BNS]                                ← Building capability
 Q3 [Services Australia]                        ← Government
 Q2 [    ]                                      ← Table stakes
 Q1 [    ]                                      ← Table stakes
 ```
 
-*CBA = reference leader
+*CBA = reference leader (4.5/5)
+**NAB = closest to Q6 (4.0/5)
 
 ---
 
-## Banking Sector
+## Banking Sector - BIG 4 COMPLETE ✓
 
-| Company | Code | Quadrant | Maturity | Status | Last Updated |
-|---------|------|----------|----------|--------|--------------|
-| Commonwealth Bank | CBA | Q5→Q6 | 4.5/5 | Validated | 2025-10-18 |
-| Westpac | WBC | Q5 | 3.5-4.0/5 | **Complete** | 2025-12-04 |
-| ANZ | ANZ | Q4→Q5 | 3.5/5 | Pending | - |
-| NAB | NAB | Q5 | 3.5/5 | Pending | - |
+| Company | Code | Quadrant | Maturity | GAIN | Status | Last Updated |
+|---------|------|----------|----------|------|--------|--------------|
+| Commonwealth Bank | CBA | Q5→Q6 | 4.5/5 | ~33/40 | Validated | 2025-10-18 |
+| **NAB** | NAB | Q5 (High) | **4.0/5** | **31/40** | **Complete** | 2025-12-04 |
+| Westpac | WBC | Q5 | 3.5-4.0/5 | 28/40 | Complete | 2025-12-04 |
+| ANZ | ANZ | Q5 | 3.5/5 | 27/40 | Complete | 2025-12-04 |
 
-**Sector Pattern:** Banking concentrated at Q5. CBA leads, others chasing. Governance-first approach (regulatory driver) creates competitive moat.
+### Banking Sector Insights
+
+**Ranking (by GAIN Score):**
+1. CBA - Q5→Q6 leader, #1 APAC, governance moat
+2. **NAB - Customer Brain (50M/month), closest to Q6, 12-18mo timeline**
+3. Westpac - UNITE platform, modern architecture advantage
+4. ANZ - ANZ Plus platform, Suncorp integration, 24-36mo to Q6
+
+**Sector Pattern:** All Big 4 now confirmed at Q5. NAB has most sophisticated customer AI (Customer Brain). CBA leads overall. Governance-first approach creates competitive moat.
+
+**Key Differentiators:**
+| Bank | Key AI Asset | Differentiator |
+|------|--------------|----------------|
+| CBA | Engagement Engine | 55M decisions/day, governance leadership |
+| NAB | Customer Brain | 50M interactions/month, 40% engagement uplift |
+| Westpac | UNITE Platform | Modern architecture, clean-sheet advantage |
+| ANZ | ANZ Plus | 1M+ customers, institutional strength |
 
 ---
 
@@ -77,9 +94,9 @@ Q1 [    ]                                      ← Table stakes
 
 ## Research Queue
 
-### Priority 1: Complete Big 4 Banks
-- [ ] ANZ Bank (ASX: ANZ)
-- [ ] NAB Bank (ASX: NAB)
+### Priority 1: Complete Big 4 Banks ✓ COMPLETE
+- [x] ANZ Bank (ASX: ANZ) - Q5, 3.5/5, GAIN 27/40
+- [x] NAB Bank (ASX: NAB) - Q5, 4.0/5, GAIN 31/40
 
 ### Priority 2: ASX 20 Expansion
 - [ ] BHP (ASX: BHP)

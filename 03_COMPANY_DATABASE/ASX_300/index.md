@@ -4,8 +4,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Companies Analyzed | 6 |
-| Sectors Covered | Banking, Mining, Retail, Telecom |
+| Companies Analyzed | 8 |
+| Sectors Covered | Banking, Mining, Healthcare, Retail, Telecom |
 | Last Updated | 2025-12-04 |
 
 ---
@@ -14,10 +14,10 @@
 
 ```
 Q9 [    ]                                      ← Future: Full Orchestrators
-Q8 [RIO, FMG]                                  ← Mining Leaders
+Q8 [BHP★, RIO, FMG]                            ← Mining Leaders (BHP = global #1)
 Q7 [    ]                                      ← Traditional Proxy (bypassed)
 Q6 [    ]                                      ← Target: CBA (closest), NAB (12-18mo)
-Q5 [CBA*, NAB**, WBC, ANZ, TLS, WOW]           ← LARGEST CLUSTER (All Big 4 Banks)
+Q5 [CBA*, NAB**, WBC, ANZ, CSL, TLS, WOW]      ← LARGEST CLUSTER
 Q4 [OPTUS, BNS]                                ← Building capability
 Q3 [Services Australia]                        ← Government
 Q2 [    ]                                      ← Table stakes
@@ -26,6 +26,7 @@ Q1 [    ]                                      ← Table stakes
 
 *CBA = reference leader (4.5/5)
 **NAB = closest to Q6 (4.0/5)
+★BHP = global #1 autonomous mining
 
 ---
 
@@ -58,15 +59,56 @@ Q1 [    ]                                      ← Table stakes
 
 ---
 
-## Mining Sector
+## Mining Sector - EXPANDED ✓
 
-| Company | Code | Quadrant | Maturity | Status | Last Updated |
-|---------|------|----------|----------|--------|--------------|
-| Rio Tinto | RIO | Q8→Q9 | 4.5/5 | Validated | 2025-10-18 |
-| Fortescue | FMG | Q8 | 4.0/5 | Validated | 2025-10-18 |
-| BHP | BHP | Q3 | 3.0/5 | Pending | - |
+| Company | Code | Quadrant | Maturity | GAIN | Status | Last Updated |
+|---------|------|----------|----------|------|--------|--------------|
+| **BHP** | BHP | **Q8** | **4.5/5** | **34/40** | **Complete** | 2025-12-04 |
+| Rio Tinto | RIO | Q8→Q9 | 4.5/5 | ~33/40 | Validated | 2025-10-18 |
+| Fortescue | FMG | Q8 | 4.0/5 | ~30/40 | Validated | 2025-10-18 |
 
-**Sector Pattern:** Mining bifurcated. Rio/Fortescue at Q8 (autonomous operations). BHP behind at Q3.
+### Mining Sector Insights
+
+**Ranking (by GAIN Score):**
+1. **BHP - Global #1 autonomous fleet (300 trucks), $1B from data automation**
+2. Rio Tinto - AutoHaul railway (1,700 km), Q9 trajectory
+3. Fortescue - 360 electric trucks ordered, electrification leader
+
+**Sector Pattern:** All major miners at Q8 (Intelligent Proxy). BHP leads in scale, Rio Tinto in rail automation, Fortescue in electrification. All pursuing Q9.
+
+**Key Differentiators:**
+| Company | Key AI Asset | Differentiator |
+|---------|--------------|----------------|
+| BHP | 300 autonomous trucks | Largest fleet globally |
+| Rio Tinto | AutoHaul (1,700 km) | Only fully autonomous railway |
+| Fortescue | 360 electric trucks | Electrification + autonomy |
+
+---
+
+## Healthcare Sector - NEW ✓
+
+| Company | Code | Quadrant | Maturity | GAIN | Status | Last Updated |
+|---------|------|----------|----------|------|--------|--------------|
+| **CSL** | CSL | **Q5** | **3.5/5** | **29/40** | **Complete** | 2025-12-04 |
+
+### Healthcare Sector Insights
+
+**Analysis:**
+CSL is executing comprehensive digital transformation via AWS Digital Core:
+- 10x acceleration in cloud migration planning
+- AI across drug development pipeline
+- Rika plasma collection innovation
+- Strong governance (EU AI Act ready)
+
+**Sector Pattern:** Healthcare/Biotech operates at Q5 (Dynamic Curator) due to regulatory requirements for human oversight in clinical decisions. Q6 pathway constrained by FDA/TGA approval processes.
+
+**Comparison to Global Pharma:**
+| Company | AI Readiness | Notes |
+|---------|--------------|-------|
+| Eli Lilly | #1 | 13 AI investments since Aug 2023 |
+| CSL | Not Top 5 | Strong infrastructure, governance focus |
+
+**Pattern:** Biotech AI operates under longer timelines (5-10 years for drug approval) but potentially larger innovation impact when successful.
 
 ---
 
@@ -98,9 +140,9 @@ Q1 [    ]                                      ← Table stakes
 - [x] ANZ Bank (ASX: ANZ) - Q5, 3.5/5, GAIN 27/40
 - [x] NAB Bank (ASX: NAB) - Q5, 4.0/5, GAIN 31/40
 
-### Priority 2: ASX 20 Expansion
-- [ ] BHP (ASX: BHP)
-- [ ] CSL (ASX: CSL)
+### Priority 2: ASX 20 Expansion - IN PROGRESS
+- [x] BHP (ASX: BHP) - Q8, 4.5/5, GAIN 34/40 ✓
+- [x] CSL (ASX: CSL) - Q5, 3.5/5, GAIN 29/40 ✓
 - [ ] Wesfarmers (ASX: WES)
 - [ ] Macquarie Group (ASX: MQG)
 - [ ] Transurban (ASX: TCL)

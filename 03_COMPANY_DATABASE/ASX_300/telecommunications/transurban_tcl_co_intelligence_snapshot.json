@@ -1,0 +1,114 @@
+{
+  "company_name": "Transurban",
+  "ticker": "ASX:TCL",
+  "sector": "Infrastructure/Toll Roads",
+  "analysis_date": "2025-12-04",
+  "co_intelligence_index": {
+    "quadrant": "Q5",
+    "quadrant_name": "Dynamic Curator",
+    "confidence": 0.82,
+    "rationale": "Transurban operates in Q5 through active orchestration of human-AI collaboration across both customer (LinktGO app) and execution (35-person analytics team, 40% CityLink improvement) dimensions. The 55% Loops signature indicates adaptive systems that continuously learn and optimize. Governance gaps (3.0/5) represent maturity constraints within Q5 rather than a downgrade to Q2 Efficiency Operator."
+  },
+  "aaa_dimensions": {
+    "data_foundations": {
+      "score": 4.2,
+      "max": 5.0,
+      "assessment": "Strong AWS cloud-first architecture, Compass IoT platform with real-time traffic data"
+    },
+    "system_integration": {
+      "score": 4.0,
+      "max": 5.0,
+      "assessment": "Well-integrated LinktGO customer platform and internal analytics systems"
+    },
+    "human_ai_interaction": {
+      "score": 3.5,
+      "max": 5.0,
+      "assessment": "35-person analytics team shows augmentation, but interaction patterns need maturation"
+    },
+    "governance_risk": {
+      "score": 3.0,
+      "max": 5.0,
+      "assessment": "Critical blocker - governance frameworks lag operational AI deployment"
+    },
+    "inclusion": {
+      "score": 3.2,
+      "max": 5.0,
+      "assessment": "Moderate accessibility in customer-facing AI, room for broader stakeholder inclusion"
+    },
+    "organizational_readiness": {
+      "score": 4.0,
+      "max": 5.0,
+      "assessment": "Strong technical capability and change management for infrastructure AI"
+    },
+    "overall_maturity": {
+      "score": 3.75,
+      "max": 5.0,
+      "assessment": "Solid Q5 performer held back by governance gap"
+    }
+  },
+  "gain_score": {
+    "growth": {
+      "score": 7,
+      "max": 10,
+      "rationale": "LinktGO drives digital engagement and new revenue streams, but geographic expansion limited to Australia"
+    },
+    "amplification": {
+      "score": 8,
+      "max": 10,
+      "rationale": "40% CityLink operational improvement, 35-person analytics team, AWS cloud-first shows strong productivity gains"
+    },
+    "intelligence": {
+      "score": 7,
+      "max": 10,
+      "rationale": "Compass IoT enables predictive traffic management, but governance gaps constrain decision-making maturity"
+    },
+    "novelty": {
+      "score": 6,
+      "max": 10,
+      "rationale": "Autonomous vehicle testing and adaptive tolling show innovation, but incremental rather than transformative"
+    },
+    "total": 28,
+    "max_total": 40,
+    "percentile": 70,
+    "interpretation": "Strong performer - solid execution across growth, amplification, and intelligence with moderate innovation"
+  },
+  "llv_signature": {
+    "lines": 35,
+    "loops": 55,
+    "vibes": 10,
+    "dominant_pattern": "Loops",
+    "interpretation": "Adaptive systems dominate with continuous learning and optimization. Strong feedback mechanisms between customer usage and operational improvements."
+  },
+  "pathway_hint": "Accelerate governance maturity to unlock full Q5 potential. Focus on establishing AI ethics frameworks, risk management protocols, and transparent decision-making systems to move from 3.0 to 4.0+ governance score.",
+  "commentary": "Transurban exemplifies Q5 Dynamic Curator through sophisticated orchestration of AI across customer experience (LinktGO) and operational excellence (40% CityLink improvement). The 35-person analytics team and Compass IoT platform demonstrate mature human-AI collaboration with strong adaptive loops. However, governance frameworks (3.0/5) represent the critical constraint preventing progression to elite Q5 status - addressing this gap could unlock significant additional value from existing AI investments.",
+  "key_evidence": [
+    "LinktGO mobile app provides customer-facing AI augmentation with real-time tolling and trip optimization",
+    "35-person analytics team achieving 40% operational improvement on CityLink through AI-driven insights",
+    "AWS cloud-first architecture and Compass IoT platform enable real-time traffic prediction and dynamic pricing",
+    "Autonomous vehicle testing and adaptive tolling systems demonstrate forward-looking innovation despite governance gaps"
+  ],
+  "strategic_priorities": [
+    {
+      "priority": 1,
+      "theme": "Governance Acceleration",
+      "description": "Establish comprehensive AI governance framework including ethics board, risk protocols, and transparency mechanisms"
+    },
+    {
+      "priority": 2,
+      "theme": "Human-AI Interaction Maturity",
+      "description": "Evolve from analytics team augmentation to organization-wide AI fluency and collaboration patterns"
+    },
+    {
+      "priority": 3,
+      "theme": "Customer Experience Innovation",
+      "description": "Expand LinktGO capabilities beyond transactional tolling to predictive journey planning and mobility-as-a-service"
+    }
+  ],
+  "metadata": {
+    "analysis_framework": "Helix Co-Intelligence Index v2.0",
+    "architect_agent_version": "AAA Framework",
+    "sensing_agent_version": "Pattern Detection Engine",
+    "orchestration_agent": "Helix Synthesizer",
+    "reconciliation_method": "Evidence-weighted pattern detection over maturity constraints"
+  }
+}

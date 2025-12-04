@@ -1,0 +1,516 @@
+{
+  "metadata": {
+    "name": "Co-Intelligent Business Model Pattern Library",
+    "version": "1.0.0",
+    "created": "2025-12-04",
+    "framework": "Double-AAA (Co-Intelligent Business Model Matrix)",
+    "author": "Helix Strategic Intelligence + Claude",
+    "purpose": "Define each quadrant as a distinct business model pattern for pattern matching and company positioning",
+    "total_patterns": 9
+  },
+  "axes": {
+    "vertical": {
+      "name": "Customer Action Dimension",
+      "levels": ["Assist", "Augment", "Adapt"],
+      "description": "How the organization acts in relation to customers"
+    },
+    "horizontal": {
+      "name": "Execution Dimension",
+      "levels": ["Assist", "Augment", "Adapt"],
+      "description": "How the organization executes its operations"
+    }
+  },
+  "patterns": [
+    {
+      "id": "Q1",
+      "name": "Basic Assistant",
+      "position": {
+        "customer": "Assist",
+        "execution": "Assist",
+        "coordinates": [1, 1]
+      },
+      "llv_signature": {
+        "lines": 85,
+        "loops": 10,
+        "vibes": 5,
+        "description": "Lines-Lines: Pure structure on both axes"
+      },
+      "business_model": {
+        "value_proposition": "AI helps customers through predefined, structured processes",
+        "customer_role": "Self-service with AI guidance",
+        "execution_mode": "Rule-based, scripted workflows",
+        "ai_capability": "Pattern matching, retrieval, simple automation",
+        "revenue_model": "Traditional product/service sales",
+        "human_role": "In the loop for all decisions, at the helm for strategy"
+      },
+      "examples": {
+        "generic": ["FAQ chatbot", "Form-filling assistant", "Basic scheduling tool"],
+        "validated_companies": []
+      },
+      "capability_requirements": {
+        "data": "Structured, siloed datasets",
+        "systems": "Basic APIs optional",
+        "human_ai": "Prompt literacy, output reviewing",
+        "governance": "Usage policy, basic boundaries",
+        "inclusion": "Basic accessibility compliance",
+        "readiness": "Pilot funding, trust building"
+      },
+      "cognitive_pattern": "Sequential",
+      "risk_profile": {
+        "technical": "Low",
+        "ethical": "Low",
+        "governance": "Manageable",
+        "trust": "Building"
+      },
+      "evolution_pathways": {
+        "horizontal": {"next": "Q2", "trigger": "Feedback loops operational, learning systems deployed"},
+        "vertical": {"next": "Q4", "trigger": "Co-creation workflows defined, partnership mindset"},
+        "diagonal": {"next": "Q5", "trigger": "Combined Q2 + Q4 triggers plus ecosystem readiness"}
+      }
+    },
+    {
+      "id": "Q2",
+      "name": "Smart Assistant",
+      "position": {
+        "customer": "Assist",
+        "execution": "Augment",
+        "coordinates": [2, 1]
+      },
+      "llv_signature": {
+        "lines": 50,
+        "loops": 45,
+        "vibes": 5,
+        "description": "Lines-Loops: Structured intent, adaptive delivery"
+      },
+      "business_model": {
+        "value_proposition": "AI helps customers with adaptive, learning-enhanced processes",
+        "customer_role": "Guided by context-aware AI suggestions",
+        "execution_mode": "AI adapts recommendations based on feedback loops",
+        "ai_capability": "Machine learning, personalization, continuous improvement",
+        "revenue_model": "Enhanced product/service value, premium tiers",
+        "human_role": "In the loop with escalation paths, at the helm for boundaries"
+      },
+      "examples": {
+        "generic": ["Learning customer service AI", "Personalized shopping assistant", "Adaptive learning platform"],
+        "validated_companies": []
+      },
+      "capability_requirements": {
+        "data": "Integrated across key touchpoints",
+        "systems": "API layer for data sharing",
+        "human_ai": "Feedback provision, pattern recognition",
+        "governance": "Escalation protocols, bias monitoring",
+        "inclusion": "Multi-modal access, language support",
+        "readiness": "Change management, success metrics"
+      },
+      "cognitive_pattern": "Sequential + Logical",
+      "risk_profile": {
+        "technical": "Moderate",
+        "ethical": "Low",
+        "governance": "Manageable",
+        "trust": "Building"
+      },
+      "evolution_pathways": {
+        "horizontal": {"next": "Q3", "trigger": "Multi-system orchestration, autonomous decision framework"},
+        "vertical": {"next": "Q5", "trigger": "Ecosystem engagement, multi-stakeholder alignment"},
+        "diagonal": {"next": "Q6", "trigger": "Self-optimizing systems + strategic collaboration"}
+      }
+    },
+    {
+      "id": "Q3",
+      "name": "Intelligent Assistant",
+      "position": {
+        "customer": "Assist",
+        "execution": "Adapt",
+        "coordinates": [3, 1]
+      },
+      "llv_signature": {
+        "lines": 40,
+        "loops": 25,
+        "vibes": 35,
+        "description": "Lines-Vibes: Structured customer intent, dynamic system delivery"
+      },
+      "business_model": {
+        "value_proposition": "AI proactively helps customers through autonomous orchestration",
+        "customer_role": "Receives proactive, highly personalized assistance",
+        "execution_mode": "AI autonomously orchestrates multiple systems",
+        "ai_capability": "Multi-agent systems, predictive analytics, real-time optimization",
+        "revenue_model": "Premium assistance services, outcome-based pricing",
+        "human_role": "At the helm only, override capability, strategic oversight"
+      },
+      "examples": {
+        "generic": ["Proactive customer service", "Predictive maintenance alerts", "Adaptive security monitoring"],
+        "validated_companies": ["Services Australia (Government)"]
+      },
+      "capability_requirements": {
+        "data": "Real-time, cross-system integration",
+        "systems": "Microservices, event-driven architecture",
+        "human_ai": "Override judgment, systemic monitoring",
+        "governance": "Active review panels, incident reporting",
+        "inclusion": "Universal design principles",
+        "readiness": "Cultural readiness for autonomy"
+      },
+      "cognitive_pattern": "Systems + Logical",
+      "risk_profile": {
+        "technical": "High",
+        "ethical": "Medium",
+        "governance": "Complex",
+        "trust": "Maintaining"
+      },
+      "evolution_pathways": {
+        "horizontal": null,
+        "vertical": {"next": "Q6", "trigger": "Strategic collaboration, systems thinking capability"},
+        "diagonal": {"next": "Q9", "trigger": "EXTREME: All intermediate triggers required"}
+      }
+    },
+    {
+      "id": "Q4",
+      "name": "Co-Creation Assistant",
+      "position": {
+        "customer": "Augment",
+        "execution": "Assist",
+        "coordinates": [1, 2]
+      },
+      "llv_signature": {
+        "lines": 45,
+        "loops": 50,
+        "vibes": 5,
+        "description": "Loops-Lines: Feedback within structured process"
+      },
+      "business_model": {
+        "value_proposition": "Human and AI co-create outcomes through structured workflows",
+        "customer_role": "Active partner in defined co-creation process",
+        "execution_mode": "Predefined collaborative workflows",
+        "ai_capability": "Generative AI, design support, iterative refinement",
+        "revenue_model": "Collaborative service premium, co-creation fees",
+        "human_role": "Co-creator in the loop, strategic decision-maker at the helm"
+      },
+      "examples": {
+        "generic": ["Design collaboration tool", "Content co-authoring platform", "Strategic planning assistant"],
+        "validated_companies": ["Optus", "Bendigo Bank"]
+      },
+      "capability_requirements": {
+        "data": "Rich contextual data, user preference tracking",
+        "systems": "Collaboration platforms, version control",
+        "human_ai": "Co-design capability, creative partnership",
+        "governance": "IP ownership clarity, ethical co-creation",
+        "inclusion": "Participatory design processes",
+        "readiness": "Partnership mindset, shared ownership"
+      },
+      "cognitive_pattern": "Creative + Reflective",
+      "risk_profile": {
+        "technical": "Moderate",
+        "ethical": "Medium",
+        "governance": "Complex",
+        "trust": "Maintaining"
+      },
+      "evolution_pathways": {
+        "horizontal": {"next": "Q5", "trigger": "Ecosystem partnerships, modular architecture, real-time assembly"},
+        "vertical": {"next": "Q7", "trigger": "Delegation frameworks, boundary-setting capability"},
+        "diagonal": {"next": "Q8", "trigger": "Learning from outcomes + strategic delegation"}
+      }
+    },
+    {
+      "id": "Q5",
+      "name": "Dynamic Curator",
+      "mit_cisr_name": "Modular Curator",
+      "position": {
+        "customer": "Augment",
+        "execution": "Augment",
+        "coordinates": [2, 2]
+      },
+      "llv_signature": {
+        "lines": 35,
+        "loops": 55,
+        "vibes": 10,
+        "description": "Loops-Loops: Continuous co-evolution on both axes"
+      },
+      "business_model": {
+        "value_proposition": "AI and customer co-create by dynamically assembling modular solutions",
+        "customer_role": "Strategic partner setting goals and priorities",
+        "execution_mode": "AI adaptively assembles solutions from ecosystem",
+        "ai_capability": "Multi-provider orchestration, real-time assembly, synergy detection",
+        "revenue_model": "Share of customized solution bundles",
+        "human_role": "Collaborative decision-making, ongoing refinement"
+      },
+      "examples": {
+        "generic": ["Financial advisor co-design", "Healthcare care coordinator", "Supply chain optimizer"],
+        "validated_companies": ["CBA", "NAB", "Westpac", "ANZ", "CSL", "Telstra", "Woolworths"]
+      },
+      "strategic_significance": "LARGEST CLUSTER - 45% of mature Australian enterprises",
+      "capability_requirements": {
+        "data": "Ecosystem-wide, interoperable",
+        "systems": "Modular architecture, plug-and-play services",
+        "human_ai": "Advanced co-creation, ethical discernment",
+        "governance": "Multi-party agreements, shared accountability",
+        "inclusion": "Co-design with diverse stakeholders",
+        "readiness": "Ecosystem thinking, partnership culture"
+      },
+      "cognitive_pattern": "Creative + Reflective + Systems",
+      "risk_profile": {
+        "technical": "High",
+        "ethical": "Medium",
+        "governance": "Complex",
+        "trust": "Transparency-maintained"
+      },
+      "evolution_pathways": {
+        "horizontal": {"next": "Q6", "trigger": "Self-optimizing systems, autonomous learning, ethics board functioning"},
+        "vertical": {"next": "Q8", "trigger": "Strategic delegation, outcome-based thinking, learning-based trust"},
+        "diagonal": {"next": "Q9", "trigger": "All intermediate triggers plus complete transformation"}
+      },
+      "industry_pattern": "Sweet spot for regulated industries (banking, healthcare, telco)"
+    },
+    {
+      "id": "Q6",
+      "name": "Adaptive Partner",
+      "position": {
+        "customer": "Augment",
+        "execution": "Adapt",
+        "coordinates": [3, 2]
+      },
+      "llv_signature": {
+        "lines": 25,
+        "loops": 45,
+        "vibes": 30,
+        "description": "Loops-Vibes: Feedback-driven dynamic orchestration"
+      },
+      "business_model": {
+        "value_proposition": "AI autonomously optimizes partnership while co-creating with customer",
+        "customer_role": "Strategic partner receiving autonomous insights",
+        "execution_mode": "AI autonomously optimizes execution while maintaining partnership",
+        "ai_capability": "Self-optimizing systems, strategic AI, autonomous learning",
+        "revenue_model": "Share of achieved outcomes, performance-based",
+        "human_role": "Strategic collaborator, ethical oversight"
+      },
+      "examples": {
+        "generic": ["AI business strategist", "Adaptive research assistant", "Investment co-pilot"],
+        "validated_companies": ["CBA (transitioning)"]
+      },
+      "strategic_significance": "TARGET STATE for Q5 companies (12-18 month horizon)",
+      "capability_requirements": {
+        "data": "Comprehensive, real-time, predictive",
+        "systems": "Self-adaptive platforms, autonomous agents",
+        "human_ai": "Strategic collaboration, systems thinking",
+        "governance": "Ethics board, continuous monitoring",
+        "inclusion": "Equity in AI decision-making",
+        "readiness": "High trust, innovation culture"
+      },
+      "cognitive_pattern": "Systems + Strategic",
+      "risk_profile": {
+        "technical": "High",
+        "ethical": "Medium-High",
+        "governance": "Critical",
+        "trust": "Proving through outcomes"
+      },
+      "evolution_pathways": {
+        "horizontal": null,
+        "vertical": {"next": "Q9", "trigger": "Life outcome thinking, systemic wisdom, complete trust"},
+        "diagonal": null
+      }
+    },
+    {
+      "id": "Q7",
+      "name": "Traditional Proxy",
+      "mit_cisr_name": "Customer Proxy",
+      "position": {
+        "customer": "Adapt",
+        "execution": "Assist",
+        "coordinates": [1, 3]
+      },
+      "llv_signature": {
+        "lines": 50,
+        "loops": 15,
+        "vibes": 35,
+        "description": "Vibes-Lines: Autonomous customer action within process boundaries"
+      },
+      "business_model": {
+        "value_proposition": "AI acts on customer's behalf following structured rules",
+        "customer_role": "Delegator who sets clear parameters and boundaries",
+        "execution_mode": "Predefined proxy workflows with automated execution",
+        "ai_capability": "Automated decision-making within constraints",
+        "revenue_model": "Achieving specific outcomes, transaction fees",
+        "human_role": "Goal-setter, boundary-definer, outcome monitor"
+      },
+      "examples": {
+        "generic": ["Travel booking agent", "Auto-renewal service", "Bill payment automation"],
+        "validated_companies": []
+      },
+      "strategic_significance": "Bypassed by most enterprises - Q5→Q8 preferred path",
+      "capability_requirements": {
+        "data": "Customer preferences, decision history",
+        "systems": "Workflow automation, integration APIs",
+        "human_ai": "Delegation skills, boundary setting",
+        "governance": "Clear liability frameworks, audit trails",
+        "inclusion": "Accessibility in delegation interfaces",
+        "readiness": "Trust in automation, clear accountability"
+      },
+      "cognitive_pattern": "Sequential + Logical",
+      "risk_profile": {
+        "technical": "Moderate",
+        "ethical": "High",
+        "governance": "Critical",
+        "trust": "Proving through accountability"
+      },
+      "evolution_pathways": {
+        "horizontal": {"next": "Q8", "trigger": "Learning from outcomes, autonomous adaptation within bounds"},
+        "vertical": null,
+        "diagonal": {"next": "Q9", "trigger": "Multi-agent coordination, emergent capabilities"}
+      }
+    },
+    {
+      "id": "Q8",
+      "name": "Intelligent Proxy",
+      "position": {
+        "customer": "Adapt",
+        "execution": "Augment",
+        "coordinates": [2, 3]
+      },
+      "llv_signature": {
+        "lines": 20,
+        "loops": 40,
+        "vibes": 40,
+        "description": "Vibes-Loops: Autonomous action with continuous learning"
+      },
+      "business_model": {
+        "value_proposition": "AI autonomously acts for customer while continuously learning",
+        "customer_role": "Strategic oversight, goal refinement",
+        "execution_mode": "AI learns and adapts approach based on outcomes",
+        "ai_capability": "Reinforcement learning, autonomous optimization",
+        "revenue_model": "Performance-based fees, outcome sharing",
+        "human_role": "Strategic overseer, pattern validator"
+      },
+      "examples": {
+        "generic": ["Autonomous portfolio manager", "Energy management system", "Recruitment AI"],
+        "validated_companies": ["BHP", "Rio Tinto", "Fortescue"]
+      },
+      "strategic_significance": "MINING SECTOR DOMINANCE - Operational excellence through autonomy",
+      "capability_requirements": {
+        "data": "Outcome tracking, performance metrics",
+        "systems": "Learning platforms, feedback mechanisms",
+        "human_ai": "Oversight judgment, pattern interpretation",
+        "governance": "Performance accountability, bias detection",
+        "inclusion": "Equity monitoring in autonomous decisions",
+        "readiness": "Comfort with delegation + learning"
+      },
+      "cognitive_pattern": "Systems + Reflective",
+      "risk_profile": {
+        "technical": "Very High",
+        "ethical": "High",
+        "governance": "Critical",
+        "trust": "Performance-validated"
+      },
+      "evolution_pathways": {
+        "horizontal": {"next": "Q9", "trigger": "Ecosystem orchestration, multi-agent coordination, systemic governance"},
+        "vertical": null,
+        "diagonal": null
+      },
+      "industry_pattern": "Dominant in mining/resources due to operational autonomy focus"
+    },
+    {
+      "id": "Q9",
+      "name": "Autonomous Orchestrator",
+      "mit_cisr_name": "Orchestrator",
+      "position": {
+        "customer": "Adapt",
+        "execution": "Adapt",
+        "coordinates": [3, 3]
+      },
+      "llv_signature": {
+        "lines": 10,
+        "loops": 25,
+        "vibes": 65,
+        "description": "Vibes-Vibes: Full dynamic orchestration on both axes"
+      },
+      "business_model": {
+        "value_proposition": "AI autonomously orchestrates ecosystem to achieve customer life outcomes",
+        "customer_role": "Life outcome designer and strategic overseer",
+        "execution_mode": "AI autonomously orchestrates across entire ecosystem",
+        "ai_capability": "Multi-agent orchestration, emergent intelligence",
+        "revenue_model": "Share of total life value created",
+        "human_role": "Life goal architect, ethical guardian, ultimate accountability"
+      },
+      "examples": {
+        "generic": ["Full life domain manager", "Enterprise-wide AI orchestrator", "City infrastructure AI"],
+        "validated_companies": []
+      },
+      "strategic_significance": "ULTIMATE BUSINESS MODEL - No current Australian enterprises achieved",
+      "capability_requirements": {
+        "data": "Real-time, ecosystem-wide, predictive at scale",
+        "systems": "Fully composable, self-organizing architecture",
+        "human_ai": "Orchestration mastery, systemic wisdom",
+        "governance": "Multi-stakeholder ethics board, continuous evolution",
+        "inclusion": "Universal design, equity as core principle",
+        "readiness": "Complete cultural transformation"
+      },
+      "cognitive_pattern": "Systems + Strategic + Emergent",
+      "risk_profile": {
+        "technical": "Extreme",
+        "ethical": "Extreme",
+        "governance": "Existential",
+        "trust": "Ultimate accountability"
+      },
+      "evolution_pathways": {
+        "horizontal": null,
+        "vertical": null,
+        "diagonal": null
+      },
+      "pathway_warning": "Q1→Q9 direct skip is NOT RECOMMENDED for most organizations"
+    }
+  ],
+  "strategic_pathways": {
+    "horizontal_progression": {
+      "name": "Execution First",
+      "path": ["Q1", "Q2", "Q3"],
+      "description": "Build execution capability before customer autonomy",
+      "best_for": "Risk-averse industries, regulated sectors",
+      "examples": ["Banking", "Healthcare", "Legal services"]
+    },
+    "vertical_progression": {
+      "name": "Customer First",
+      "path": ["Q1", "Q4", "Q7"],
+      "description": "Increase customer autonomy with structured processes",
+      "best_for": "Trust-critical relationships",
+      "examples": ["Financial advisory", "Education"]
+    },
+    "expertise_scaling": {
+      "name": "Balanced Diagonal",
+      "path": ["Q1", "Q5", "Q9"],
+      "description": "Balanced advancement on both axes",
+      "best_for": "Technology companies, digital natives",
+      "examples": ["Fintech", "Healthtech", "Edtech"]
+    },
+    "operational_intelligence": {
+      "name": "Autonomous Operations Path",
+      "path": ["Q1", "Q8", "Q9"],
+      "description": "Focus on operational autonomy first",
+      "best_for": "Heavy industry, manufacturing, resources",
+      "examples": ["Mining", "Logistics", "Manufacturing"]
+    }
+  },
+  "sector_clusters": {
+    "banking": {
+      "typical_quadrant": "Q5",
+      "leaders": ["CBA (Q5→Q6)"],
+      "pattern": "Governance-first approach creates competitive moat"
+    },
+    "mining": {
+      "typical_quadrant": "Q8",
+      "leaders": ["BHP (Q8 global #1)"],
+      "pattern": "Operations-first, autonomous fleet focus"
+    },
+    "healthcare_biotech": {
+      "typical_quadrant": "Q5",
+      "leaders": ["CSL (Q5)"],
+      "pattern": "Q6 pathway constrained by regulatory oversight requirements"
+    },
+    "retail": {
+      "typical_quadrant": "Q5→Q6",
+      "leaders": ["Woolworths"],
+      "pattern": "Data-first through customer intelligence"
+    },
+    "telecommunications": {
+      "typical_quadrant": "Q5→Q8",
+      "leaders": ["Telstra"],
+      "pattern": "Dual path - customer Q5, operations Q8"
+    }
+  }
+}

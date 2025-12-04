@@ -142,7 +142,13 @@ async function runHelixPipeline(options) {
 
     // Stage 3: Sensing (Quadrant Detection)
     console.log(`\n📡 Stage 3: Helix Sensing (Quadrant Detection)`);
-    const sensingOutput = detectQuadrant(architectOutput);
+    // Pass research evidence for framework-aligned gates
+    const researchEvidence = {
+      deployment_level: researchData.deployment_level || 'announced',  // announced/piloting/deployed/scaled
+      adoption_evidence: researchData.adoption_evidence || false,      // actual usage proven?
+      autonomous_systems: researchData.autonomous_systems || false     // AI orchestrating AI?
+    };
+    const sensingOutput = detectQuadrant(architectOutput, researchEvidence);
     await storeMemory(
       MEMORY_KEYS.sensing(ticker, period),
       sensingOutput
@@ -272,13 +278,61 @@ function analyzeWithArchitect(researchData) {
   };
 }
 
-// Sensing: Detect Quadrant
-function detectQuadrant(architectOutput) {
+// Sensing: Detect Quadrant (Framework-Aligned)
+// Based on Double-AAA Framework requirements - NOT just numeric thresholds
+function detectQuadrant(architectOutput, researchEvidence = {}) {
   const customerScore = (architectOutput.aaa_human_ai_interaction + architectOutput.aaa_org_readiness) / 2;
   const executionScore = (architectOutput.aaa_data_foundations + architectOutput.aaa_system_integration) / 2;
+  const governanceScore = architectOutput.aaa_governance_risk;
 
-  const customerAxis = customerScore >= 4.0 ? 'adapt' : customerScore >= 2.5 ? 'augment' : 'assist';
-  const executionAxis = executionScore >= 4.0 ? 'adapt' : executionScore >= 2.5 ? 'augment' : 'assist';
+  // Initial axis determination based on scores
+  let customerAxis = customerScore >= 4.0 ? 'adapt' : customerScore >= 2.5 ? 'augment' : 'assist';
+  let executionAxis = executionScore >= 4.0 ? 'adapt' : executionScore >= 2.5 ? 'augment' : 'assist';
+
+  // GOVERNANCE GATE: Q7-Q9 require strong governance (framework explicitly states this)
+  // "Q7-Q9: Governance Risk: Critical (systemic oversight required)"
+  const governanceGate = {
+    Q7: 3.5,  // Traditional Proxy - needs clear liability frameworks
+    Q8: 4.0,  // Intelligent Proxy - needs performance accountability
+    Q9: 4.5   // Autonomous Orchestrator - needs multi-stakeholder ethics board
+  };
+
+  // Apply governance gate - downgrade if governance insufficient
+  if (customerAxis === 'adapt' && governanceScore < governanceGate.Q7) {
+    customerAxis = 'augment';  // Can't act autonomously without governance
+    console.log(`  ⚠️ Governance gate: Customer axis downgraded (${governanceScore} < ${governanceGate.Q7})`);
+  }
+
+  if (executionAxis === 'adapt' && governanceScore < governanceGate.Q7) {
+    executionAxis = 'augment';  // Can't have autonomous execution without governance
+    console.log(`  ⚠️ Governance gate: Execution axis downgraded (${governanceScore} < ${governanceGate.Q7})`);
+  }
+
+  // EVIDENCE QUALITY CHECK: High quadrants require deployed (not just announced) AI
+  // "Q9 requires: AI autonomously orchestrates ecosystem" - must be PROVEN
+  const evidenceQuality = researchEvidence.deployment_level || 'announced';
+  // announced < piloting < deployed < scaled
+  const evidenceLevels = { announced: 1, piloting: 2, deployed: 3, scaled: 4 };
+
+  // Q8-Q9 require at least "deployed" evidence
+  if ((customerAxis === 'adapt' && executionAxis === 'augment') ||  // Q8
+      (customerAxis === 'adapt' && executionAxis === 'adapt')) {    // Q9
+    if (evidenceLevels[evidenceQuality] < evidenceLevels.deployed) {
+      // Downgrade - can't claim autonomous without proof of deployment
+      if (customerAxis === 'adapt') customerAxis = 'augment';
+      console.log(`  ⚠️ Evidence gate: Insufficient deployment evidence for Q8/Q9`);
+    }
+  }
+
+  // ADOPTION vs INVESTMENT CHECK
+  // Framework distinguishes between "building capability" and "operating in quadrant"
+  const hasActualAdoption = researchEvidence.adoption_evidence || false;
+  if (!hasActualAdoption && (customerAxis === 'adapt' || executionAxis === 'adapt')) {
+    // Investment without adoption = one quadrant lower
+    if (customerAxis === 'adapt') customerAxis = 'augment';
+    if (executionAxis === 'adapt') executionAxis = 'augment';
+    console.log(`  ⚠️ Adoption gate: Investment found but adoption not demonstrated`);
+  }
 
   const quadrantMap = {
     'assist-assist': { q: 'Q1', name: 'Basic Assistant' },
@@ -294,6 +348,12 @@ function detectQuadrant(architectOutput) {
 
   const result = quadrantMap[`${customerAxis}-${executionAxis}`] || { q: 'Q1', name: 'Basic Assistant' };
 
+  // Confidence based on evidence quality and governance alignment
+  let confidence = 0.80;
+  if (governanceScore < 3.0) confidence -= 0.15;
+  if (evidenceLevels[evidenceQuality] < 3) confidence -= 0.10;
+  if (!hasActualAdoption) confidence -= 0.10;
+
   return {
     quadrant: result.q,
     quadrant_name: result.name,
@@ -301,7 +361,13 @@ function detectQuadrant(architectOutput) {
     execution_axis: executionAxis,
     customer_score: customerScore,
     execution_score: executionScore,
-    confidence: 0.80
+    governance_score: governanceScore,
+    confidence: Math.max(0.40, confidence),
+    gates_applied: {
+      governance_gate: governanceScore < governanceGate.Q7,
+      evidence_gate: evidenceLevels[evidenceQuality] < evidenceLevels.deployed,
+      adoption_gate: !hasActualAdoption
+    }
   };
 }
 

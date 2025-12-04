@@ -1,0 +1,21 @@
+[
+  {
+    "id": "autonomous_service_delivery",
+    "name": "Autonomous Service Delivery",
+    "description": "Service models where AI agents handle complete customer interactions without human involvement",
+    "market_evidence": [
+      "Growing demand for 24/7 service availability",
+      "Labor cost pressures in service industries",
+      "AI capability advancement enabling full autonomy"
+    ],
+    "confidence_level": 0.95,
+    "research_sources": [
+      "AI research",
+      "Service industry analysis"
+    ],
+    "discovery_date": "2025-06-28T20:49:41.066256",
+    "validation_status": "validated",
+    "market_size_estimate": "$50B+ by 2027",
+    "competitive_landscape": "Emerging space with few established players"
+  }
+]

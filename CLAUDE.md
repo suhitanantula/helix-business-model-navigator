@@ -116,8 +116,37 @@ Save output to `03_COMPANY_DATABASE/ASX_300/[sector]/[company].md`
 |------|---------|
 | `01_CORE_FRAMEWORK/double_aaa_framework.md` | Master framework documentation |
 | `02_RESEARCH_ENGINE/prompts/company_research.md` | Perplexity research prompt template |
+| `02_RESEARCH_ENGINE/prompts/aaa_assessment.md` | Quadrant positioning logic with transparency |
+| `02_RESEARCH_ENGINE/prompts/strategic_brief.md` | Brief generation with logic audit trail |
+| `02_RESEARCH_ENGINE/prompts/research_archaeology.md` | Full transparency documentation template |
 | `03_COMPANY_DATABASE/ASX_300/index.md` | Master index of all company positions |
 | `03_COMPANY_DATABASE/validated_cases/` | Deep-dive validated case studies |
+| `06_METHODOLOGY/research_archaeology_methodology.md` | Standalone transparency methodology for agents |
+
+---
+
+## Transparency Standard: Research Archaeology
+
+Every company analysis must include transparent decision documentation:
+
+### Required Elements
+1. **Source Chain**: All sources with credibility tier ratings
+2. **Decision Logic Chains**: Alternatives considered and rejection rationale
+3. **Assumption Register**: Explicit assumptions with confidence levels
+4. **Limitation Acknowledgment**: Information gaps and uncertainty ranges
+5. **Audit Trail**: Complete traceability from conclusion to evidence
+
+### Source Credibility Tiers
+| Tier | Source Type | Credibility |
+|------|-------------|-------------|
+| 1 | Company Filings (Annual Reports, ASX) | Highest |
+| 2 | Executive Statements (CEO, CTO quotes) | Very High |
+| 3 | Industry Research (Gartner, Forrester) | High |
+| 4 | Quality Media (AFR, IT News) | Medium-High |
+| 5 | General Media | Medium |
+
+### Example: Westpac Research Archaeology
+See `03_COMPANY_DATABASE/ASX_300/banking/westpac_research_archaeology.md` for a complete example of transparent research documentation
 
 ---
 

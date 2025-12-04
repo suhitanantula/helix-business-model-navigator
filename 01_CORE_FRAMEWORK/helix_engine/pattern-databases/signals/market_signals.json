@@ -1,0 +1,68 @@
+[
+  {
+    "signal_type": "technology",
+    "description": "AI agents creating new service delivery models with zero human involvement",
+    "source": "Technology research",
+    "timestamp": "2025-06-28T20:49:41.066024",
+    "confidence": 0.85,
+    "potential_patterns": [
+      "autonomous_service_delivery",
+      "ai_agent_marketplaces"
+    ]
+  },
+  {
+    "signal_type": "technology",
+    "description": "Edge computing enabling real-time, location-based service models",
+    "source": "Technology research",
+    "timestamp": "2025-06-28T20:49:41.066039",
+    "confidence": 0.8,
+    "potential_patterns": [
+      "edge_service_networks",
+      "real_time_local_optimization"
+    ]
+  },
+  {
+    "signal_type": "regulation",
+    "description": "GDPR-style privacy regulations creating demand for privacy-first business models",
+    "source": "Regulatory monitoring",
+    "timestamp": "2025-06-28T20:49:41.066041",
+    "confidence": 0.9,
+    "potential_patterns": [
+      "privacy_first_platforms",
+      "data_minimization_models"
+    ]
+  },
+  {
+    "signal_type": "behavior",
+    "description": "Remote work creating demand for asynchronous collaboration models",
+    "source": "Behavior research",
+    "timestamp": "2025-06-28T20:49:41.066044",
+    "confidence": 0.85,
+    "potential_patterns": [
+      "async_collaboration_platforms",
+      "time_zone_arbitrage_models"
+    ]
+  },
+  {
+    "signal_type": "crisis",
+    "description": "Supply chain disruptions creating demand for resilience-first business models",
+    "source": "Crisis monitoring",
+    "timestamp": "2025-06-28T20:49:41.066046",
+    "confidence": 0.88,
+    "potential_patterns": [
+      "resilience_premium_models",
+      "redundancy_as_a_service"
+    ]
+  },
+  {
+    "signal_type": "cultural",
+    "description": "Sustainability consciousness creating circular economy business models",
+    "source": "Cultural research",
+    "timestamp": "2025-06-28T20:49:41.066047",
+    "confidence": 0.92,
+    "potential_patterns": [
+      "circular_revenue_models",
+      "regenerative_business_systems"
+    ]
+  }
+]

@@ -123,6 +123,63 @@ Q1 → Q4 → Q7 → Q8 → Q9
 
 ---
 
+## Step 6: Document Decision Logic (Transparency Requirement)
+
+**Every assessment must include transparent decision documentation:**
+
+### Decision Logic Chain Template
+```
+CUSTOMER ACTION DECISION:
+├── ASSIST Evidence: [List evidence for ASSIST]
+│   └── Strength: [Strong/Moderate/Weak/None]
+├── AUGMENT Evidence: [List evidence for AUGMENT]
+│   └── Strength: [Strong/Moderate/Weak/None]
+├── ADAPT Evidence: [List evidence for ADAPT]
+│   └── Strength: [Strong/Moderate/Weak/None]
+├── SELECTED: [ASSIST/AUGMENT/ADAPT]
+├── REJECTED: [Other options with rejection rationale]
+└── CONFIDENCE: [X]%
+
+EXECUTION DECISION:
+├── ASSIST Evidence: [List evidence]
+│   └── Strength: [Strong/Moderate/Weak/None]
+├── AUGMENT Evidence: [List evidence]
+│   └── Strength: [Strong/Moderate/Weak/None]
+├── ADAPT Evidence: [List evidence]
+│   └── Strength: [Strong/Moderate/Weak/None]
+├── SELECTED: [ASSIST/AUGMENT/ADAPT]
+├── REJECTED: [Other options with rejection rationale]
+└── CONFIDENCE: [X]%
+
+QUADRANT DETERMINATION:
+├── Customer × Execution = Q[X]
+├── Alternative Considered: Q[Y] - [Why rejected]
+└── Final Confidence: [X]%
+```
+
+### Assumption Register Template
+```
+ASSUMPTIONS MADE:
+├── Assumption 1: [Statement]
+│   ├── Source: [Where this came from]
+│   ├── Confidence: [High/Medium/Low]
+│   └── If Wrong: [Impact on assessment]
+├── Assumption 2: [Statement]
+│   └── [Same structure]
+...
+```
+
+### Limitation Acknowledgment Template
+```
+LIMITATIONS:
+├── Information Gaps: [What we couldn't verify]
+├── Uncertainty Range: Maturity could be [X] to [Y]
+├── Key Risk: [What could change this assessment]
+└── Validation Needed: [What additional info would help]
+```
+
+---
+
 ## Assessment Output Template
 
 ```markdown
@@ -132,16 +189,19 @@ Q1 → Q4 → Q7 → Q8 → Q9
 **Maturity Level:** [X]/5
 **Strategic Pathway:** [Pathway Name]
 **Target Quadrant:** Q[Y] (estimated [timeframe])
+**Assessment Confidence:** [X]%
 
 ### Customer Action Assessment
 - **Dimension:** [Assist/Augment/Adapt]
 - **Evidence:** [Specific examples from research]
 - **Confidence:** [High/Medium/Low]
+- **Alternatives Rejected:** [Other dimensions considered and why]
 
 ### Execution Assessment
 - **Dimension:** [Assist/Augment/Adapt]
 - **Evidence:** [Specific examples from research]
 - **Confidence:** [High/Medium/Low]
+- **Alternatives Rejected:** [Other dimensions considered and why]
 
 ### Maturity Indicators
 - Governance: [Level X - evidence]
@@ -154,4 +214,29 @@ Q1 → Q4 → Q7 → Q8 → Q9
 - **Actual Capability:** [From evidence]
 - **Gap Size:** [Small/Medium/Large]
 - **Key Gaps:** [Specific capability gaps]
+
+### Decision Transparency
+- **Key Assumptions:** [List assumptions that affected positioning]
+- **Information Gaps:** [What we couldn't verify]
+- **Uncertainty Range:** [Possible alternative positions]
+- **Validation Trigger:** [What would change this assessment]
 ```
+
+---
+
+## Source Chain Requirements
+
+Every assessment must document sources with credibility ratings:
+
+| Tier | Source Type | Credibility |
+|------|-------------|-------------|
+| 1 | Company Filings (Annual Reports, ASX) | Highest |
+| 2 | Executive Statements (CEO, CTO quotes) | Very High |
+| 3 | Industry Research (Gartner, Forrester) | High |
+| 4 | Quality Media (AFR, IT News) | Medium-High |
+| 5 | General Media | Medium |
+
+**Minimum Requirements:**
+- At least 2 Tier 1-2 sources for quadrant positioning
+- All evidence must include source attribution
+- Confidence levels must reflect source quality

@@ -24,6 +24,14 @@
 const { spawn, execSync } = require('child_process');
 const https = require('https');
 const http = require('http');
+require('dotenv').config();
+
+// API Keys from environment
+const API_KEYS = {
+  tavily: process.env.TAVILY_API_KEY,
+  exa: process.env.EXA_API_KEY,
+  glm: process.env.GLM_API_KEY
+};
 
 // Provider configurations
 const PROVIDERS = {
@@ -162,6 +170,10 @@ class ResearchProvider {
     switch (provider) {
       case 'perplexity':
         return this.searchPerplexity(query, options);
+      case 'tavily':
+        return this.searchTavily(query, options);
+      case 'exa':
+        return this.searchExa(query, options);
       case 'websearch':
         return this.searchWebSearch(query, options);
       case 'fetch':
@@ -216,6 +228,127 @@ class ResearchProvider {
         params: { url, max_length: 10000 }
       }
     };
+  }
+
+  // Tavily search (actual API call)
+  async searchTavily(query, options = {}) {
+    const apiKey = API_KEYS.tavily;
+    if (!apiKey) {
+      throw new Error('TAVILY_API_KEY not set in environment');
+    }
+
+    return new Promise((resolve, reject) => {
+      const data = JSON.stringify({
+        api_key: apiKey,
+        query: query,
+        search_depth: options.depth || 'advanced',
+        include_answer: true,
+        include_raw_content: false,
+        max_results: options.maxResults || 10
+      });
+
+      const req = https.request({
+        hostname: 'api.tavily.com',
+        path: '/search',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': data.length
+        }
+      }, (res) => {
+        let body = '';
+        res.on('data', chunk => body += chunk);
+        res.on('end', () => {
+          try {
+            const response = JSON.parse(body);
+            if (response.error) {
+              reject(new Error(`Tavily error: ${response.error}`));
+            } else {
+              resolve({
+                provider: 'tavily',
+                query,
+                answer: response.answer,
+                results: response.results?.map(r => ({
+                  title: r.title,
+                  url: r.url,
+                  content: r.content,
+                  score: r.score
+                })) || [],
+                sources: response.results?.map(r => r.url) || []
+              });
+            }
+          } catch (e) {
+            reject(new Error(`Tavily parse error: ${e.message}`));
+          }
+        });
+      });
+
+      req.on('error', reject);
+      req.write(data);
+      req.end();
+    });
+  }
+
+  // Exa search (actual API call)
+  async searchExa(query, options = {}) {
+    const apiKey = API_KEYS.exa;
+    if (!apiKey) {
+      throw new Error('EXA_API_KEY not set in environment');
+    }
+
+    return new Promise((resolve, reject) => {
+      const data = JSON.stringify({
+        query: query,
+        num_results: options.maxResults || 10,
+        use_autoprompt: true,
+        type: options.type || 'auto',
+        contents: {
+          text: true
+        }
+      });
+
+      const req = https.request({
+        hostname: 'api.exa.ai',
+        path: '/search',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey,
+          'Content-Length': data.length
+        }
+      }, (res) => {
+        let body = '';
+        res.on('data', chunk => body += chunk);
+        res.on('end', () => {
+          try {
+            const response = JSON.parse(body);
+            if (response.error) {
+              reject(new Error(`Exa error: ${response.error}`));
+            } else {
+              resolve({
+                provider: 'exa',
+                query,
+                results: response.results?.map(r => ({
+                  title: r.title,
+                  url: r.url,
+                  content: r.text || r.snippet,
+                  score: r.score,
+                  publishedDate: r.publishedDate
+                })) || [],
+                sources: response.results?.map(r => r.url) || [],
+                autopromptString: response.autopromptString
+              });
+            }
+          } catch (e) {
+            reject(new Error(`Exa parse error: ${e.message}`));
+          }
+        });
+      });
+
+      req.on('error', reject);
+      req.write(data);
+      req.end();
+    });
   }
 
   // Call GLM 4.6 for analysis (low cost)
